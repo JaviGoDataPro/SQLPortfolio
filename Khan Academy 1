@@ -1,0 +1,21 @@
+CREATE TABLE games_store (id INTEGER PRIMARY KEY, name TEXT, genre TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO games_store VALUES (1, "Call of Duty", "Shooter", 10, 60);
+INSERT INTO games_store VALUES (2, "God of War", "Action", 20, 60);
+INSERT INTO games_store VALUES (3, "Legend of Zelda", "Adventure", 15, 70);
+INSERT INTO games_store VALUES (4, "Yakuza 0", "Action", 5, 20);
+INSERT INTO games_store VALUES (5, "Catherine", "Puzzle", 5, 15);
+INSERT INTO games_store VALUES (6, "Gravity Rush", "Action", 5, 15);
+INSERT INTO games_store VALUES (7, "Saints Row", "Action", 5, 10);
+INSERT INTO games_store VALUES (8, "Silent Hill", "Horror", 10, 15);
+INSERT INTO games_store VALUES (9, "GTA V", "Action", 15, 30);
+INSERT INTO games_store VALUES (10, "Assassin's Creed", "Adventure", 10, 25);
+INSERT INTO games_store VALUES (11, "Tales of Beseria", "Adventure", 10, 35);
+INSERT INTO games_store VALUES (12, "Risk of Rain", "Action", 15, 15);
+INSERT INTO games_store VALUES (13, "Eyes Over Heaven", "Action", 10, 30);
+INSERT INTO games_store VALUES (14, "Visage", "Horror", 15, 10);
+INSERT INTO games_store VALUES (15, "Braid", "Puzzle", 5, 10);
+SELECT * FROM games_store;
+
+SELECT * FROM games_store ORDER BY price;
+SELECT SUM(quantity) FROM games_store;
